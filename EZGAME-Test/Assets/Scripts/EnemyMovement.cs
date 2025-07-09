@@ -3,22 +3,26 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
+    //Movement
     public float speed;
     public float stopDistance;
     public float rotationSpeed;
     public Transform player;
-
+    private Vector3 _offset;
     private bool _isMoving = true;
-    private bool _Attacking = false;
 
+
+    //Attack
+    private bool _Attacking = false;
     [SerializeField] private GameObject _attackHitbox;
     [SerializeField] private GameObject _attackCollider;
 
-    private Vector3 _offset;
+    //Animation
     private Animator _animator;
 
     private void Start()
     {
+        //random offset so that the enemies dont stack
         _offset = new Vector3(Random.Range(-1f, 1f), 0, Random.Range(-1f, 1f));
         _attackHitbox.SetActive(false);
         _animator = GetComponent<Animator>();
@@ -33,6 +37,7 @@ public class EnemyMovement : MonoBehaviour
         Vector3 direction = (targetPosition - transform.position).normalized;
         float distance = Vector3.Distance(transform.position, targetPosition);
 
+        //No rotation when attacking
         if (!_Attacking)
         {
             Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
@@ -70,6 +75,7 @@ public class EnemyMovement : MonoBehaviour
         _isMoving = true;
     }
 
+    //only punches if player is in front, rotate when player is not
     private bool IsPlayerInFront()
     {
         Vector3 toPlayer = (player.position - transform.position).normalized;

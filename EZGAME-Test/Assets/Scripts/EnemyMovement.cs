@@ -12,6 +12,7 @@ public class EnemyMovement : MonoBehaviour
     private bool _Attacking = false;
 
     [SerializeField] private GameObject _attackHitbox;
+    [SerializeField] private GameObject _attackCollider;
 
     private Vector3 _offset;
     private Animator _animator;
@@ -60,7 +61,9 @@ public class EnemyMovement : MonoBehaviour
         _attackHitbox.SetActive(true);
         yield return new WaitForSeconds(1f);
         _animator.SetBool("_Attacking", true);
+        _attackCollider.SetActive(true);
         yield return new WaitForSeconds(0.7f);
+        _attackCollider.SetActive(false);
         _animator.SetBool("_Attacking", false);
         _attackHitbox.SetActive(false);
         _Attacking = false;

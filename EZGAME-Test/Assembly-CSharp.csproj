@@ -57,8 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\EnemyMovement.cs" />
+    <Compile Include="Assets\Scripts\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\HealthBarUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\EZ Assets\Shader\Illumin-Diffuse.shader" />

@@ -8,7 +8,6 @@ public class EnemyHealth : MonoBehaviour
     private float _currentHealth;
 
     [SerializeField] private HealthBarUI _healthBarUI;
-    // Start is called before the first frame update
     [SerializeField] private Rigidbody _rb;
 
     void Start()
@@ -22,7 +21,8 @@ public class EnemyHealth : MonoBehaviour
     {
         if (_currentHealth <= 0)
         {
-            _rb.AddForce(Vector3.up * 50, ForceMode.Impulse);
+            _rb.AddForce(Vector3.up * 10, ForceMode.Impulse);
+            Destroy(this.gameObject,0.5f);
         }
 
     }

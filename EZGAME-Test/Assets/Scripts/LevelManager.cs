@@ -1,0 +1,98 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class LevelManager : MonoBehaviour
+{
+    [Header("Settings")]
+    public int totalLevels = 10;
+    public int baseEnemyCount = 1;
+    public float enemyCountGrowth = 0.5f;
+    public float healthGrowth = 0.3f;
+
+    [Header("EnemiesShouldBePlaceByInceasingDifficulty")]
+    public GameObject[] enemyPrefabs;
+    public Vector2 spawnAreaMin = new Vector2(-10, -10);
+    public Vector2 spawnAreaMax = new Vector2(10, 10);
+
+    [Header("UI")]
+    public GameObject WinScreen;
+    public GameObject LoseScreen;
+    private int currentLevel = 0;
+    [SerializeField] private PlayerHealth _playerHealth;
+
+    private void Start()
+    {
+        WinScreen.SetActive(false);
+        LoseScreen.SetActive(false);
+        StartLevel(1);
+    }
+    public void StartLevel(int levelIndex)
+    {
+        int enemyCount = Mathf.RoundToInt(baseEnemyCount + levelIndex * enemyCountGrowth);
+        float enemyHealthMultiplier = 1 + levelIndex * healthGrowth;
+
+
+        for (int i = 0; i < enemyCount; i++)
+        {
+            Vector3 spawnPos = new Vector3(Random.Range(spawnAreaMin.x, spawnAreaMax.x),Random.Range(spawnAreaMin.y, spawnAreaMax.y));
+
+            GameObject prefab = enemyPrefabs[Random.Range(0, Mathf.Min(enemyPrefabs.Length, 1 + levelIndex / 3))];
+            GameObject enemy = Instantiate(prefab, spawnPos, Quaternion.identity);
+
+
+            EnemyHealth health = enemy.GetComponent<EnemyHealth>();
+            if (health != null)
+                health.enemyHealth *= enemyHealthMultiplier;
+        }
+
+        currentLevel = levelIndex;
+    }
+
+    private void Update()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        if (enemies.Length == 0)
+        {
+            WinScreen.SetActive(true);
+        }
+
+        if (_playerHealth != null &&_playerHealth.GetPlayerHealth()<=0)
+        {
+            LoseScreen.SetActive(true);
+
+        }
+    }
+
+    public void RestartLevel()
+    {
+        //Clear enemies
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in enemies)
+        {
+            Destroy(enemy);
+        }
+        //Reset char's health
+        _playerHealth.SetPlayerHealth(_playerHealth.playerHealth);
+        LoseScreen.SetActive(false);
+
+        StartLevel(currentLevel);
+    }
+    public void NextLevel()
+    {
+        if (currentLevel + 1 < totalLevels)
+        {
+            //Reset char's health
+            _playerHealth.SetPlayerHealth(_playerHealth.playerHealth);
+
+            StartLevel(currentLevel + 1);
+            WinScreen.SetActive(false);
+
+
+        }
+        else
+        {
+            print("All levels finished");
+        }
+    }
+}

@@ -18,8 +18,20 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+    public void SetPlayerHealth(float health)
+    {
+        _currentHealth=health;
+        _healthBarUI.UpdateHealhBarUI(playerHealth, _currentHealth);
 
     }
+    public float GetPlayerHealth()
+    {
+        return _currentHealth;
+    }
+
+
 
     private void OnTriggerEnter(Collider other)
     {

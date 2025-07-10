@@ -22,6 +22,18 @@ public class EnemyMovement : MonoBehaviour
 
     private void Start()
     {
+
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+        {
+            player = playerObj.transform;
+        }
+        else
+        {
+            print("No Player found");
+        }
+
+
         //random offset so that the enemies dont stack
         _offset = new Vector3(Random.Range(-1f, 1f), 0, Random.Range(-1f, 1f));
         _attackHitbox.SetActive(false);

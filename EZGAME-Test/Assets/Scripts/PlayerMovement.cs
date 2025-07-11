@@ -3,36 +3,44 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(Rigidbody))]
 public class PlayerMovement : MonoBehaviour
 {
-    //Movement
+    // Movement
     Vector2 _movementVector;
     public float moveSpeed;
     public float rotationSpeed;
     private Quaternion _targetRotation;
 
-    //Animation
+    // Animation
     private Animator _animator;
     private bool _isMoving;
 
-    //Attack
+    // Attack
     public float attackDistance = 2.0f;
     public float attackAngle = 45f;
     private bool _isAttacking = false;
     [SerializeField] private GameObject _attackCollider;
 
+    // Rigidbody for physics movement
+    private Rigidbody _rb;
+
     private void Start()
     {
         _animator = GetComponent<Animator>();
         _attackCollider.SetActive(false);
+
+        _rb = GetComponent<Rigidbody>();
+        _rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ; // Allow Y rotation only
     }
-    //trying the new input system
+
+    // Using the new input system
     public void InputPlayer(InputAction.CallbackContext _context)
     {
         _movementVector = _context.ReadValue<Vector2>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         Vector3 _movement = new Vector3(_movementVector.x, 0, _movementVector.y);
 
@@ -40,20 +48,29 @@ public class PlayerMovement : MonoBehaviour
         {
             float angle = Mathf.Atan2(_movementVector.x, _movementVector.y) * Mathf.Rad2Deg;
             _targetRotation = Quaternion.Euler(0, angle, 0);
-            transform.rotation = Quaternion.Slerp(transform.rotation, _targetRotation, rotationSpeed * Time.deltaTime);
 
-            _animator.SetBool("_isMoving", true);
             _isMoving = true;
+            _animator.SetBool("_isMoving", true);
         }
         else
         {
-            _animator.SetBool("_isMoving", false);
             _isMoving = false;
+            _animator.SetBool("_isMoving", false);
         }
 
+        // Physics movement
         _movement.Normalize();
-        transform.Translate(moveSpeed * _movement * Time.deltaTime, Space.World);
+        Vector3 moveAmount = _movement * moveSpeed * Time.fixedDeltaTime;
+        _rb.MovePosition(_rb.position + moveAmount);
 
+        // Apply rotation through Rigidbody
+        if (_isMoving)
+        {
+            Quaternion smoothedRotation = Quaternion.Slerp(_rb.rotation, _targetRotation, rotationSpeed * Time.fixedDeltaTime);
+            _rb.MoveRotation(smoothedRotation);
+        }
+
+        // Attack if idle & enemy in range
         if (!_isMoving && !_isAttacking && IsEnemyInFrontAndInRange())
         {
             StartCoroutine(Attack());
@@ -65,7 +82,6 @@ public class PlayerMovement : MonoBehaviour
         _isAttacking = true;
         _animator.SetBool("_Attacking", true);
 
-        //redo
         yield return new WaitForSeconds(0.3f);
         _attackCollider.SetActive(true);
         yield return new WaitForSeconds(0.5f);
@@ -77,7 +93,6 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsEnemyInFrontAndInRange()
     {
-        //Check more than 1 enemies, 1vs3 mode
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (GameObject enemy in enemies)
         {
@@ -96,4 +111,3 @@ public class PlayerMovement : MonoBehaviour
         return false;
     }
 }
-

@@ -465,6 +465,7 @@ GameObject:
   - component: {fileID: 1219436896}
   - component: {fileID: 3240261550191012793}
   - component: {fileID: 174864350377172592}
+  - component: {fileID: 785143222659372742}
   m_Layer: 0
   m_Name: Ally
   m_TagString: Ally
@@ -573,6 +574,19 @@ MonoBehaviour:
   attackRange: 2
   _attackHitbox: {fileID: 3421810730021043461}
   _attackCollider: {fileID: 8986949687708121465}
+--- !u!65 &785143222659372742
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122972254015428975}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.18, y: 0.7, z: 0.1}
+  m_Center: {x: 0.01, y: 0.42, z: -0.03}
 --- !u!1 &2211893352704014900
 GameObject:
   m_ObjectHideFlags: 0

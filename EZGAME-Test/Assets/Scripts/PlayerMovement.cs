@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
         _attackCollider.SetActive(false);
 
         _rb = GetComponent<Rigidbody>();
-        _rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ; // Allow Y rotation only
+        _rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ; //Allow Y rotation only
     }
 
     // Using the new input system

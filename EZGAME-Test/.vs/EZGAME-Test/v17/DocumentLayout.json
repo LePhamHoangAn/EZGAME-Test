@@ -7,10 +7,8 @@
       "RelativeMoniker": "D:0:0:{60051FBB-096A-4D80-9060-9A40241B2319}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\allymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60051FBB-096A-4D80-9060-9A40241B2319}|Assembly-CSharp.csproj|C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\assets\\scripts\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60051FBB-096A-4D80-9060-9A40241B2319}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
+<<<<<<< HEAD
+=======
       "AbsoluteMoniker": "D:0:0:{60051FBB-096A-4D80-9060-9A40241B2319}|Assembly-CSharp.csproj|c:\\users\\hoang\\downloads\\ezgame-test\\ezgame-test\\assets\\scripts\\aiunits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60051FBB-096A-4D80-9060-9A40241B2319}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\aiunits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,6 +21,26 @@
       "RelativeMoniker": "D:0:0:{60051FBB-096A-4D80-9060-9A40241B2319}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+>>>>>>> HealthSystem
+      "AbsoluteMoniker": "D:0:0:{60051FBB-096A-4D80-9060-9A40241B2319}|Assembly-CSharp.csproj|C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\assets\\scripts\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60051FBB-096A-4D80-9060-9A40241B2319}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{60051FBB-096A-4D80-9060-9A40241B2319}|Assembly-CSharp.csproj|c:\\users\\hoang\\downloads\\ezgame-test\\ezgame-test\\assets\\scripts\\aiunits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60051FBB-096A-4D80-9060-9A40241B2319}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\aiunits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60051FBB-096A-4D80-9060-9A40241B2319}|Assembly-CSharp.csproj|c:\\users\\hoang\\downloads\\ezgame-test\\ezgame-test\\assets\\scripts\\entitiesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60051FBB-096A-4D80-9060-9A40241B2319}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entitiesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60051FBB-096A-4D80-9060-9A40241B2319}|Assembly-CSharp.csproj|C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\assets\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60051FBB-096A-4D80-9060-9A40241B2319}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+=======
+>>>>>>> HealthSystem
       "AbsoluteMoniker": "D:0:0:{60051FBB-096A-4D80-9060-9A40241B2319}|Assembly-CSharp.csproj|C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\assets\\scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60051FBB-096A-4D80-9060-9A40241B2319}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,6 +49,13 @@
       "RelativeMoniker": "D:0:0:{60051FBB-096A-4D80-9060-9A40241B2319}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\allyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
+=======
+      "AbsoluteMoniker": "D:0:0:{60051FBB-096A-4D80-9060-9A40241B2319}|Assembly-CSharp.csproj|C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\assets\\scripts\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60051FBB-096A-4D80-9060-9A40241B2319}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+>>>>>>> HealthSystem
       "AbsoluteMoniker": "D:0:0:{60051FBB-096A-4D80-9060-9A40241B2319}|Assembly-CSharp.csproj|C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60051FBB-096A-4D80-9060-9A40241B2319}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -50,13 +75,18 @@
           "Children": [
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
+=======
+              "DocumentIndex": 1,
+>>>>>>> HealthSystem
               "Title": "AIUnits.cs",
               "DocumentMoniker": "C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\Assets\\Scripts\\AIUnits.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AIUnits.cs",
               "ToolTip": "C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\Assets\\Scripts\\AIUnits.cs",
               "RelativeToolTip": "Assets\\Scripts\\AIUnits.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAA==",
+<<<<<<< HEAD
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-11T03:35:53.473Z",
               "EditorCaption": ""
@@ -108,12 +138,15 @@
               "ToolTip": "C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\Assets\\Scripts\\EnemyMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\EnemyMovement.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+=======
+>>>>>>> HealthSystem
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T04:19:01.442Z",
+              "WhenOpened": "2025-07-11T03:35:53.473Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 4,
               "Title": "LevelManager.cs",
               "DocumentMoniker": "C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\Assets\\Scripts\\LevelManager.cs",
@@ -122,10 +155,73 @@
               "RelativeToolTip": "Assets\\Scripts\\LevelManager.cs",
               "ViewState": "AgIAAFkAAAAAAAAAAADwv2IAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+=======
+              "DocumentIndex": 2,
+              "Title": "EntitiesManager.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\Assets\\Scripts\\EntitiesManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EntitiesManager.cs",
+              "ToolTip": "C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\Assets\\Scripts\\EntitiesManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EntitiesManager.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T03:27:22.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AllyHealth.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\Assets\\Scripts\\AllyHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AllyHealth.cs",
+              "ToolTip": "C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\Assets\\Scripts\\AllyHealth.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AllyHealth.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwB8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T11:45:40.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AllyMovement.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\Assets\\Scripts\\AllyMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AllyMovement.cs",
+              "ToolTip": "C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\Assets\\Scripts\\AllyMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AllyMovement.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAmwFAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T11:36:10.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LevelManager.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\Assets\\Scripts\\LevelManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LevelManager.cs",
+              "ToolTip": "C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\Assets\\Scripts\\LevelManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LevelManager.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAADwv2IAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+>>>>>>> HealthSystem
               "WhenOpened": "2025-07-10T02:37:26.614Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+=======
+              "DocumentIndex": 7,
+              "Title": "EnemyHealth.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\Assets\\Scripts\\EnemyHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyHealth.cs",
+              "ToolTip": "C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\Assets\\Scripts\\EnemyHealth.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyHealth.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T14:18:41.572Z"
+            },
+            {
+              "$type": "Document",
+>>>>>>> HealthSystem
               "DocumentIndex": 5,
               "Title": "PlayerHealth.cs",
               "DocumentMoniker": "C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\Assets\\Scripts\\PlayerHealth.cs",
@@ -138,7 +234,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 8,
+=======
+              "DocumentIndex": 9,
+>>>>>>> HealthSystem
               "Title": "HealthBarUI.cs",
               "DocumentMoniker": "C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\Assets\\Scripts\\HealthBarUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HealthBarUI.cs",
@@ -150,7 +250,23 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 7,
+=======
+              "DocumentIndex": 4,
+              "Title": "EnemyMovement.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\Assets\\Scripts\\EnemyMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyMovement.cs",
+              "ToolTip": "C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\Assets\\Scripts\\EnemyMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyMovement.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAgwHUAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T04:19:01.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+>>>>>>> HealthSystem
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\Users\\hoang\\Downloads\\EZGame-Test\\EZGAME-Test\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",

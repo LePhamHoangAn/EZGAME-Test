@@ -56,11 +56,22 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\HealthBarUI.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\EnemyMovement.cs" />
+    <Compile Include="Assets\Scripts\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\EnemyHealth.cs" />
+    <Compile Include="Assets\Scripts\LevelManager.cs" />
+    <Compile Include="Assets\Matthew Guz\Select Character\Scene Demo\Script\CameraRotation.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\EnemyMovement.cs" />
+    <Compile Include="Assets\Matthew Guz\Select Character\Scripts\ActivateWithClick.cs" />
+    <Compile Include="Assets\Scripts\AllyMovement.cs" />
+    <Compile Include="Assets\Scripts\AllyHealth.cs" />
+    <Compile Include="Assets\Scripts\EntitiesManager.cs" />
+    <Compile Include="Assets\Scripts\AIUnits.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Matthew Guz\Select Character\Documentation\Readme.txt" />
     <None Include="Assets\EZ Assets\Shader\Illumin-Diffuse.shader" />
   </ItemGroup>
   <ItemGroup>
